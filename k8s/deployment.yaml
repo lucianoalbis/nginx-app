@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: lucianoalbis/nginx-app:latest
+          image: lucianoalbis/nginx-app:v2
           ports:
             - containerPort: 80
