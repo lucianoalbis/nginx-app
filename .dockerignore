@@ -1,0 +1,43 @@
+# Ignora diretórios de controle de versão
+.git
+.gitignore
+
+# Logs e temporários
+logs
+*.log
+tmp/
+temp/
+*.pid
+*.seed
+
+# Configurações locais e de ambiente
+.env
+.env.local
+.env.*.local
+
+# Dependências locais
+node_modules/
+vendor/
+
+# Build e artefatos temporários
+dist/
+build/
+.cache/
+coverage/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# IDEs e editores
+.vscode/
+.idea/
+*.swp
+
+# Arquivos Kubernetes e ArgoCD
+k8s/
+.argocd/
+
+# Arquivos de documentação ou notas pessoais
+Notes.txt
+README.md
