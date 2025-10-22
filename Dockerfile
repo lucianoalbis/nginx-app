@@ -1,14 +1,11 @@
-# Usa imagem base oficial do Nginx
 FROM nginx:stable-alpine
 
-# Remove configuração padrão
+# Remove página padrão
 RUN rm -rf /usr/share/nginx/html/*
 
-# Copia o index.html para o diretório servido pelo Nginx
+# Copia seu index.html
 COPY index.html /usr/share/nginx/html/
 
-# Expõe a porta 80
 EXPOSE 80
 
-# Inicia o Nginx
 CMD ["nginx", "-g", "daemon off;"]
